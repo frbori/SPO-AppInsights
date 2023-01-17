@@ -26,7 +26,7 @@ You can then use the [Kusto Query Language (KQL)](https://learn.microsoft.com/en
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.0     | January 17, 2023 | Initial release |
+| 1.0     | January 17, 2023 | [Initial release](../../releases/tag/v1.0.0.1) |
 
 ## Disclaimer
 
