@@ -1,4 +1,4 @@
-# spo-app-insights
+# SharePoint Online Application Insights
 
 ## Summary
 
