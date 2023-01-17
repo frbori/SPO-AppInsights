@@ -21,7 +21,7 @@ export default class SharePointOnlineApplicationInsightsApplicationCustomizer
   }
 
   public async onInit(): Promise<void> {
-    console.log("SPO-AppInsights: 1.0.0.9");
+    console.log("SPO-AppInsights: 1.0.0.2");
     const connectionString: string = this.properties.connectionString;
     const enableClickAnalytics: boolean = this.properties.enableClickAnalytics;
     const enableUserTracking: boolean = this.properties.enableUserTracking;
