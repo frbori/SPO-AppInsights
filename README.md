@@ -2,19 +2,11 @@
 
 ## Summary
 
-This solution provides a SharePoint Framework Application Customizer that allows to send page views analytics data to Azure Application Insights.
+This solution provides a [SharePoint Framework](https://aka.ms/spfx) [Application Customizer](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/build-a-hello-world-extension) that allows to send page views analytics data to [Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview).
 
 ## Used SharePoint Framework Version
 
 ![version](https://img.shields.io/badge/version-1.16.1-green.svg)
-
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Application Insights overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
 ## Prerequisites
 
@@ -53,4 +45,4 @@ This solution provides a SharePoint Framework Application Customizer that allows
 ## Features
 
 Once the Application Customizer is added to your site(s), Application Insights will start getting analytics data and you'll be able to see those data by accessing the **Logs** page in your Application Insights.
-You can then user the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to query the collected data.
+You can then use the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to query the collected data.
