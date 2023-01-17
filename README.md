@@ -48,4 +48,5 @@ You can then use the [Kusto Query Language (KQL)](https://learn.microsoft.com/en
 - Provide your Application Insights **Connection String** in the Tenant level or Site Collection level **TenantWideExtensions** list
   - in the first case you can get it by accessing the SharePoint Online Admin Center > More features > Apps (Open button) > More features > Tenant wide extensions (Open button)
   - in the latter case by accessing the url _<yourSiteUrl>/Lists/TenantWideExtensions_).
+  
   The value needs to be added in the **connectionString** property inside the **Component Properties** column.
