@@ -2,9 +2,7 @@
 
 ## Summary
 
-A SharePoint Framework Application Customizer that allows to send analytics data to Azure Application Insights.
-The solution injects JavaScript code inside the SharePoint Online (modern) pages according to [Monitor a SharePoint site with Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sharepoint).
-It also adds customDimensions in order to track the user who performed the operation as per [Capturing User Id](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sharepoint#capturing-user-id).
+This solution provides a SharePoint Framework Application Customizer that allows to send page views analytics data to Azure Application Insights.
 
 ## Used SharePoint Framework Version
 
@@ -27,13 +25,13 @@ It also adds customDimensions in order to track the user who performed the opera
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| .\ | Francesco Bori |
 
 ## Version history
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.0     | January 13, 2023 | Initial release |
+| 1.0     | January 17, 2023 | Initial release |
 
 ## Disclaimer
 
@@ -50,26 +48,15 @@ It also adds customDimensions in order to track the user who performed the opera
   - **gulp bundle --ship**
   - **gulp package-solution --ship**
 - Upload the ./sharepoint/solution/spo-app-insights.sppkg file into the Tenant level or Site Collection level App Catalog according to your needs
-- Provide your Application Insights **Instrumentation Key** in the Tenant level or Site Collection level **TenantWideExtensions** list (in the first case you can get it by accessing the SharePoint Online Admin Center > More features > Apps (Open button) > More features > Tenant wide extensions (Open button); in the latter case by accessing the url <yourSiteUrl>/Lists/TenantWideExtensions). The value needs to be added in the **key** property inside the **Component Properties** column.
+- Provide your Application Insights **Connection String** in the Tenant level or Site Collection level **TenantWideExtensions** list (in the first case you can get it by accessing the SharePoint Online Admin Center > More features > Apps (Open button) > More features > Tenant wide extensions (Open button); in the latter case by accessing the url <yourSiteUrl>/Lists/TenantWideExtensions). The value needs to be added in the **connectionString** property inside the **Component Properties** column.
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+Once the Application Customizer is added to your site(s), Application Insights will start getting analytics data and you'll be able to see those data by accessing the **Logs** page in your Application Insights.
+You can then user the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to query the collected data.
 
 This extension illustrates the following concepts:
 
 - topic 1
 - topic 2
 - topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
-
-## References
-
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
