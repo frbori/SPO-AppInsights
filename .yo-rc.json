@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.19.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "share-point-online-application-insights",
+    "libraryId": "9e670e66-d35b-4e94-a587-597da4d98799",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "SharePoint Online Application Insights",
+    "solutionShortDescription": "SharePoint Online Application Insights description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="SharePointOnlineApplicationInsights"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="7a112824-d333-4fee-bb13-85d64dfc3a25"
+        ClientSideComponentProperties="{&quot;connectionString&quot;:&quot;&quot;}">
+    </CustomAction>
+</Elements>
