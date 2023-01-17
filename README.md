@@ -38,9 +38,9 @@ You can then use the [Kusto Query Language (KQL)](https://learn.microsoft.com/en
 - Get the .sppkg package file either:
   - Downloading the latest [release](../../releases) or
   - Packaging the solution:
-    - Cloning this repository
-    - Ensuring that you are at the solution folder
-    - in the command-line running:
+    - Clone this repository
+    - Ensure that you are at the solution folder
+    - in the command-line run:
       - **npm install**
       - **gulp bundle --ship**
       - **gulp package-solution --ship**
