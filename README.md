@@ -44,3 +44,5 @@ You can then use the [Kusto Query Language (KQL)](https://learn.microsoft.com/en
   - **gulp package-solution --ship**
 - Upload the _./sharepoint/solution/spo-app-insights.sppkg_ file into the Tenant level or Site Collection level App Catalog according to your needs
 - Provide your Application Insights **Connection String** in the Tenant level or Site Collection level **TenantWideExtensions** list (in the first case you can get it by accessing the SharePoint Online Admin Center > More features > Apps (Open button) > More features > Tenant wide extensions (Open button); in the latter case by accessing the url _<yourSiteUrl>/Lists/TenantWideExtensions_). The value needs to be added in the **connectionString** property inside the **Component Properties** column.
+
+You can even directly download the latest [release](/releases).
