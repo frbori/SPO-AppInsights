@@ -4,6 +4,6 @@
         Title="SharePointOnlineApplicationInsights"
         Location="ClientSideExtension.ApplicationCustomizer"
         ComponentId="7a112824-d333-4fee-bb13-85d64dfc3a25"
-        Properties="{&quot;connectionString&quot;:&quot;&quot;}">
+        Properties="{&quot;connectionString&quot;:&quot;&quot;,&quot;enableClickAnalytics&quot;:false,&quot;enableUserTracking&quot;:false}">
     </ClientSideComponentInstance>
 </Elements>

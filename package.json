@@ -12,6 +12,7 @@
     "test": "gulp test"
   },
   "dependencies": {
+    "@microsoft/applicationinsights-clickanalytics-js": "^2.8.9",
     "@microsoft/applicationinsights-web": "^2.8.9",
     "@microsoft/decorators": "1.16.1",
     "@microsoft/sp-application-base": "1.16.1",
