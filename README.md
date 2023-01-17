@@ -47,16 +47,10 @@ This solution provides a SharePoint Framework Application Customizer that allows
   - **npm install**
   - **gulp bundle --ship**
   - **gulp package-solution --ship**
-- Upload the ./sharepoint/solution/spo-app-insights.sppkg file into the Tenant level or Site Collection level App Catalog according to your needs
-- Provide your Application Insights **Connection String** in the Tenant level or Site Collection level **TenantWideExtensions** list (in the first case you can get it by accessing the SharePoint Online Admin Center > More features > Apps (Open button) > More features > Tenant wide extensions (Open button); in the latter case by accessing the url <yourSiteUrl>/Lists/TenantWideExtensions). The value needs to be added in the **connectionString** property inside the **Component Properties** column.
+- Upload the _./sharepoint/solution/spo-app-insights.sppkg_ file into the Tenant level or Site Collection level App Catalog according to your needs
+- Provide your Application Insights **Connection String** in the Tenant level or Site Collection level **TenantWideExtensions** list (in the first case you can get it by accessing the SharePoint Online Admin Center > More features > Apps (Open button) > More features > Tenant wide extensions (Open button); in the latter case by accessing the url _<yourSiteUrl>/Lists/TenantWideExtensions_). The value needs to be added in the **connectionString** property inside the **Component Properties** column.
 
 ## Features
 
 Once the Application Customizer is added to your site(s), Application Insights will start getting analytics data and you'll be able to see those data by accessing the **Logs** page in your Application Insights.
 You can then user the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to query the collected data.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
