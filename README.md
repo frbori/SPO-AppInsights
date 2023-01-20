@@ -2,7 +2,7 @@
 
 ## Summary
 
-This solution provides a [SharePoint Framework](https://aka.ms/spfx) [Application Customizer](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/build-a-hello-world-extension) that allows to send web analytics data to [Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) according to [Application Insights for webpages](https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript?tabs=snippet), including the **User Principal Name** of the user who performed the activity (**user_AccountId** column).
+This solution provides a [SharePoint Framework](https://aka.ms/spfx) [Application Customizer](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/build-a-hello-world-extension) that allows to send web analytics data to [Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) according to [Application Insights for webpages](https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript?tabs=snippet).
 
 Once the Application Customizer is added to your site(s), Application Insights will start getting analytics data and you'll be able to see those data by accessing the **Logs** page in your Application Insights.
 You can then use the [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to query the collected data.
@@ -50,3 +50,8 @@ You can then use the [Kusto Query Language (KQL)](https://learn.microsoft.com/en
   - in the latter case by accessing the url _<yourSiteUrl>/Lists/TenantWideExtensions_).
   
   The value needs to be added in the **connectionString** property inside the **Component Properties** column.
+
+## Optional features
+It's possible to manage the following optional features:
+- tracking of the **User Principal Name** of whom performed the activity (**user_AccountId** column in Application Insights). This can be enable/disable by setting the value of **enableUserTracking** boolean property inside the **Component Properties** column to true or false.
+- the tracking of click analytics. This can be enable/disable by setting the value of **enableClickAnalytics** boolean property inside the **Component Properties** column to true or false.
