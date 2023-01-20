@@ -26,7 +26,7 @@ export default class SharePointOnlineApplicationInsightsApplicationCustomizer
     const enableClickAnalytics: boolean = this.properties.enableClickAnalytics;
     const enableUserTracking: boolean = this.properties.enableUserTracking;
     if (!connectionString) {
-      console.log("SPO-AppInsights: No connection string to Application Insights was provided or there are issues with the Component Properties.");
+      console.log("SPO-AppInsights: No connection string to Application Insights was provided or there are issues with the Component Properties json format.");
     } else {
       const userUPN: string = await this.getUserUPN();
 
